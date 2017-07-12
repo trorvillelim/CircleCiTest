@@ -1,5 +1,5 @@
 
-build_num=$CIRCLE_BUILD_NUM
+build_num=5
 echo $CIRCLE_BUILD_NUM
 echo "var BUILD_VERSION_STAGE = {
           major: 0,
@@ -12,3 +12,6 @@ echo "var BUILD_VERSION_STAGE = {
           minor: 0,
           build: $build_num
       };" > Build.js
+
+      version=`cat Build.js`
+      echo $version
