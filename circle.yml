@@ -10,9 +10,14 @@
  # override:
   #  - ./gradlew artifactoryPublish
 
-deployment:
-  development:
-    branch: master
-    commands:
-       - sh build.sh
+#deployment:
+#  development:
+#    branch: master
+#    commands:
+#       - sh build.sh
+#
 
+
+test:
+  post:
+    - sh build.sh
