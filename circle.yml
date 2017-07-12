@@ -1,0 +1,18 @@
+#machine:
+#  node:
+#    version: 7.7.4
+#dependencies:
+#  pre:
+#   - npm install -g gulp
+#   - npm install -g bower
+#
+#test:
+ # override:
+  #  - ./gradlew artifactoryPublish
+
+deployment:
+  development:
+    branch: master
+    commands:
+       - sh build.sh
+

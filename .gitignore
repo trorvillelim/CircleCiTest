@@ -1,0 +1,7 @@
+bower_components/
+node_modules/
+public/
+.idea/
+*.DS_Store
+
+package-lock.json
